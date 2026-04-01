@@ -7,7 +7,7 @@
         <section class="content-box">
             <p>
                 This section displays the current air quality data for Los Angeles using a real-time web API. 
-                The data includes important environmental measurements such as the Air Quality Index (AQI) and pollutant levels like CO, NO₂, O₃, PM10, and PM2.5. 
+                The data includes important environmental measurements such as the Air Quality Index (AQI) and pollutant levels like CO, NO₂, O₃, PM10, PM2.5, and SO₂. 
                 This information demonstrates how databases and APIs are used to collect, store, and provide up-to-date environmental data that helps monitor air pollution and public health conditions.
             </p>
             <h2>Current Air Quality</h2>
@@ -20,8 +20,7 @@
             <p><strong>PM2.5:</strong> <%= air.data.pm25 %></p>
             <p><strong>SO2:</strong> <%= air.data.so2 %></p>
 
-        </section>
-    </main>
+   
 
      <h3>API Reference:</h3>
                
@@ -30,7 +29,8 @@
 
                      
                 </em>
-
+                     </section>
+    </main>
 
 
 <%- include('partials/footer.ejs') %>
