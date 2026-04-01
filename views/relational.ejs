@@ -1,0 +1,134 @@
+<%- include('partials/head.ejs') %>
+<%- include('partials/nav.ejs') %>
+ <main>
+          
+
+            
+            <div>
+               
+
+                <section class="content-box">
+                
+                   <h2>Tables, Rows, and Columns:</h2> 
+                   <p>
+                   Relational databases store data in tables that organize information into rows and columns.
+                   Each table represents a specific type of data such as customers, products, or orders. 
+                   Columns define the type of information stored in each row, such as name, age, or price.
+                   Each row represents a single record or entry in the table, while each column stores a specific type of information such as name, age, or price.                   
+                </p>
+                </section>
+
+                <section class="content-box">
+                    <h2>SQL:</h2> 
+                    <p>
+                    SQL (Structured Query Language) is used to interact with relational databases. 
+                    It allows users to store, retrieve, update, and delete data within database tables. 
+                    SQL works by sending queries to the database, which then returns the requested information. 
+                    SQL is used by many relational database systems such as MySQL and Oracle.
+                    </p>
+                </section>
+                
+                <section class="content-box">
+                
+                    <h2>Example of Relational Databases:</h2> 
+                    <p>
+                    Here we have an example of a relational database that contains information about dogs. 
+                    Each row represents a different dog, and each column represents a specific attribute such as its name, breed, color, or age. 
+                    The first column contains a unique identifier for each dog, called the tag number. 
+                    This structure makes it easy to organize, search, and retrieve information about each dog.
+                </p>
+
+                <figure>
+                    <img src="img/dog_relational_database-1.png" alt="Example relational database table of dog records ">
+                </figure>
+                
+                
+            
+            <!-- Create the table to hold data -->
+             <table>
+                <tr id="table-header">
+                    <td><strong>Tag # </strong></td>
+                    <td><strong>Name</strong></td>
+                    <td><strong>Breed</strong></td>
+                    <td><strong>Color</strong></td>
+                    <td><strong>Age</strong></td>
+
+                </tr>
+                <tr class="table-row">
+                    <td>1573</td>
+                    <td>Fido</td>
+                    <td>Beagle</td>
+                    <td>Brown/White</td>
+                    <td>1.5</td>
+                </tr>
+                <tr class="table-row">
+                    <td>2684</td>
+                    <td>Rex</td>
+                    <td>Pekingese</td>
+                    <td>White</td>
+                    <td>9</td>
+                </tr>
+                <tr class="table-row">
+                    <td>3795</td>
+                    <td>Bubbles</td>
+                    <td>Rottweiler</td>
+                    <td>Black</td>
+                    <td>5</td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>4806</td>
+                    <td>Cujo</td>
+                    <td>Chihuahua</td>
+                    <td>Gold</td>
+                    <td>4</td>
+                </tr>
+                
+             </table>
+                
+                <h2>Example SQL Query:</h2>
+                
+                <div class="sql-code">
+                <pre><code>
+    SELECT Name, Breed
+    FROM Dogs
+    WHERE Age > 3;
+                </code></pre>
+                </div>
+
+                <p>
+                    This SQL query returns the names and breeds of all dogs older than 3 years.
+                </p>
+
+                <p>
+                    Cujo Chihuahua
+                </p>
+
+                <p>
+                    Rex Pekingese
+
+                </p>
+
+                <p>
+                    Bubbles Rottweiler
+                </p>
+            
+           </section>
+
+            </div>
+
+                <br><br>
+
+                <h3>References:</h3>
+                <!-- THIS IS WHERE YOU PUT REFERENCES -->
+                <em>
+                     <a href="https://www.oracle.com/database/what-is-a-relational-database/"> Oracle Reference</a>
+                     <a href="https://insightsoftware.com/blog/whats-the-difference-relational-vs-non-relational-databases/"> Image Reference</a>
+                </em>
+                <br>
+                
+            
+
+        </main>
+
+<%- include('partials/footer.ejs') %>

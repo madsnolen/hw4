@@ -1,0 +1,53 @@
+<%- include('partials/head.ejs') %>
+ 
+<%- include('partials/nav.ejs') %>
+  <main>
+            <div>
+            <figure>
+                <img src="img/databasehome.png" alt="Illustration showing database systems connected to applications">
+            </figure>
+
+            <section class="content-box">
+                <h2> What is a Database?</h2>
+                <p>
+                    A database is an organized collection of data that can be stored, accessed, and managed.
+                    Databases allow users and applications to store large amounts of information efficiently and retrieve 
+                    it quickly when needed. Databases are commonly used in various applications, such as websites, mobile apps, and enterprise software, to manage and organize data effectively.
+                </p>
+
+            </section>
+
+
+            <section class="content-box">
+                <h2> Why are Databases Important?</h2>
+                <p>
+                    Databases are important because they provide a structured way to store and manage data, allowing for efficient retrieval and manipulation of information. 
+                    Instead of storing data in spreadsheets or files, databases allow multiple users and systems to access and update information safely and concurrently.
+                    They enable organizations to make informed decisions, improve operational efficiency, and support various applications and services that rely on data.
+                </p>
+            </section>
+
+             <section class="content-box">
+                <h3> Random Star Wars Quote: </h3>
+            
+                 <p><%= quote %></p>
+                
+            </section>
+            </div>
+                <br><br>
+                
+               <h3>References:</h3>
+                <!-- THIS IS WHERE YOU PUT REFERENCES -->
+                <em>
+                     <a href="https://www.oracle.com/database/what-is-database/"> Oracle Reference</a>
+                     <a href="https://blog.paessler.com/database-optimization-your-guide-to-faster-queries-and-better-performance/"> Image Reference</a>
+                </em>
+               
+                <br>
+                
+            
+
+        </main>
+
+
+<%- include('partials/footer.ejs') %>

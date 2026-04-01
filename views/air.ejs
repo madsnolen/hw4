@@ -1,0 +1,36 @@
+<%- include('partials/head.ejs') %>
+
+<%- include('partials/nav.ejs') %>
+ 
+    <main>
+        <h1> Air Quality Data</h1>
+        <section class="content-box">
+            <p>
+                This section displays the current air quality data for Los Angeles using a real-time web API. 
+                The data includes important environmental measurements such as the Air Quality Index (AQI) and pollutant levels like CO, NO₂, O₃, PM10, and PM2.5. 
+                This information demonstrates how databases and APIs are used to collect, store, and provide up-to-date environmental data that helps monitor air pollution and public health conditions.
+            </p>
+            <h2>Current Air Quality</h2>
+            <p><strong>City:</strong> <%= air.data.city %></p>
+            <p><strong>AQI:</strong> <%= air.data.aqi %></p>
+            <p><strong>CO:</strong> <%= air.data.co %></p>
+            <p><strong>NO2:</strong> <%= air.data.no2 %></p>
+            <p><strong>O3:</strong> <%= air.data.o3 %></p>
+            <p><strong>PM10:</strong> <%= air.data.pm10 %></p>
+            <p><strong>PM2.5:</strong> <%= air.data.pm25 %></p>
+            <p><strong>SO2:</strong> <%= air.data.so2 %></p>
+
+        </section>
+    </main>
+
+     <h3>API Reference:</h3>
+               
+                <em>
+                     <a href="https://www.juheapi.com/api-catalog/aqi"> API Reference</a>
+
+                     
+                </em>
+
+
+
+<%- include('partials/footer.ejs') %>
